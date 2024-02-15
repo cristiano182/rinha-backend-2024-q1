@@ -1,0 +1,7 @@
+dist
+load-test
+node_modules
+run.sh
+stress.sh
+docker-compose.yml
+.env

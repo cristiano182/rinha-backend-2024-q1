@@ -1,0 +1,40 @@
+{
+  "name": "rinha-backend-2024-q1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/infra/server/Server.ts",
+  "scripts": {
+    "start:dev": "nodemon -r dotenv/config",
+    "start": "node dist/infra/server/Server.js",
+    "build": "tsc",
+    "lint": "prettier --write 'src/**/*.{js,jsx,ts,tsx,css,json}' --config ./.prettierrc"
+  },
+  "repository": "git+https://github.com/cristiano182/rinha-backend-2024-q1.git",
+  "author": "cristiano182",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristiano182/rinha-backend-2024-q1/issues"
+  },
+  "homepage": "https://github.com/cristiano182/rinha-backend-2024-q1#readme",
+  "dependencies": {
+    "ajv": "^8.12.0",
+    "dotenv": "^16.4.1",
+    "env-var": "^7.4.1",
+    "hyper-express": "^6.14.12",
+    "inversify": "^6.0.2",
+    "lodash": "^4.17.21",
+    "pg": "^8.11.3",
+    "reflect-metadata": "^0.2.1",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@types/busboy": "^1.5.3",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.11.0",
+    "@types/pg": "^8.11.0",
+    "@types/range-parser": "^1.2.7",
+    "nodemon": "^2.0.7",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2"
+  }
+}

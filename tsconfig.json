@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "module": "commonjs",
+    "lib": ["es6", "dom"],                                        /* Specify a set of bundled library declaration files that describe the target runtime environment. */
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "target": "es6",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "outDir": "dist",
+    "moduleResolution": "node",
+    "baseUrl": "./src",
+    "paths": {
+      "@domain/*": ["domain/*"],
+      "@usecases/*": ["usecases/*"],
+      "@infra/*": ["infra/*"],
+      "@modules/*": ["infra/modules/*"]
+    },
+    "types": ["reflect-metadata"],                                /* Specify type package names to be included without being referenced in a source file. */                        /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+     // "preserveSymlinks": true,                         /* Disable resolving symlinks to their realpath. This correlates to the same flag in node. */
+     "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+
+     /* Type Checking */
+    "strict": true,
+    "strictPropertyInitialization": false,                                   /* Enable all strict type-checking options. */
+  },
+  "include": ["/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
